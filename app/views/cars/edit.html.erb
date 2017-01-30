@@ -1,0 +1,5 @@
+<%= form_tag "/cars/@car.id", method: :patch do %>
+<input type="text" name="model" value=<%= @car.model %>>
+<input type="integer" name="price" value=<%= @car.price %>>
+<input type="submit" name="Edit car!">
+<% end %>
